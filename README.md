@@ -8,5 +8,7 @@ if [ -d "$source_dir" ]; then
     for file in "$source_dir"/*; do
 	[ -r "$file" ] && source "$file"
     done
-fi' >> ${HOME}/.bashrc
+fi
+
+' >> ${HOME}/.bashrc
 ```
