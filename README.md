@@ -1,5 +1,5 @@
 # Install
 
 ```bash
-curl -sS https://github.com/scatternoodle/bashrc-exports/blob/main/install.sh | bash
+curl -sS https://raw.githubusercontent.com/scatternoodle/bashrc-exports/refs/heads/main/install.sh | bash
 ```
