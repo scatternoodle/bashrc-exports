@@ -6,7 +6,7 @@ echo '
 ############ bashrc-exports BEGIN ############
 source_dir=${HOME}/.config/bashrc-exports
 if [ -d "${source_dir}" ]; then
-    for file in ${source_dir}/*.sh; do
+    for file in "${source_dir}"/*.sh; do
 	[ -r "${file}" ] && source ${file}
     done
 fi
