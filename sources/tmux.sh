@@ -1,5 +1,3 @@
-#!/usr/bin/bash
-
 # tmn PATH NAME
 # Creates a new tmux session at the given PATH with NAME. Automatically returns
 # to original CWD after creating the session.
