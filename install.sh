@@ -18,7 +18,7 @@ if [ ! -d "${install_path}" ]; then
 		{ echo "Fatal: could not clone repo."; exit 1; }
 fi
 
-if ! grep -q "############ bashrc-exports BEGIN ############" "${rc_script}"; then
+if ! grep -q "############ bashrc-exports BEGIN ############" "${rc_file}"; then
 	echo "${rc_script}" >> "${rc_file}" ||
 		{ echo "Fatal: unable to append to bashrc at ${rc_file}"; exit 1; }
 fi
