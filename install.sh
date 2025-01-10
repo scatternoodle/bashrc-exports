@@ -19,11 +19,8 @@ if [ ! -d "${install_path}" ]; then
 fi
 
 if ! grep -q "${rc_script}" "############ bashrc-exports BEGIN ############"; then
-	# echo "${rc_script}" >> "${rc_file}" ||
-		# { echo "Fatal: unable to append to bashrc at ${rc_file}"; exit 1; }
-	echo "fresh bashrc"
-else
-	echo "bashrc already edited"
+	echo "${rc_script}" >> "${rc_file}" ||
+		{ echo "Fatal: unable to append to bashrc at ${rc_file}"; exit 1; }
 fi
 
-# source "${rc_file}"
+source "${rc_file}"
